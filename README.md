@@ -3,6 +3,15 @@
 > **ملخصات أ.د. عبدالقادر العبادي في مادة مناهج البحث العلمي**  
 > **المرجع الأساسي:** *طرق البحث في الإدارة — مدخل لبناء المهارات البحثية*، تأليف أوما سيكاران، ترجمة د. إسماعيل علي بسيوني ود. عبدالله بن سليمان العزاز، النشر العلمي والمطابع، جامعة الملك سعود (وفق بيانات الغلاف المرفق).
 
+
+## 🌐 افتح المنصة مباشرة — Live Demo
+
+**[▶️ ابدأ التعلم التفاعلي الآن | Open Interactive Learning Platform](https://mohammednageebmubarak.github.io/research-methodology-interactive/)**
+
+**[📖 عن أ.د. عبدالقادر العبادي والمرجع | About the Lecturer & Reference](https://mohammednageebmubarak.github.io/research-methodology-interactive/about.html)**
+
+> إذا لم يفتح الرابط، راجع حالة النشر في [GitHub Pages Settings](https://github.com/mohammednageebmubarak/research-methodology-interactive/settings/pages). لا يلزم تنزيل أي ملف بعد تفعيل الموقع.
+
 منصة تعلم تفاعلية عربية تعمل من المتصفح دون الحاجة إلى خادم أو اتصال إنترنت. تشمل **10 محاضرات و6 ورش تطبيقية**، مع شرح متدرج وأمثلة وبطاقات مراجعة واختبارات وتطبيقات حسابية. وهي مبنية على المواد التي قدمها صاحب المشروع، ولا تستنسخ نص الكتاب المرجعي كاملًا.
 
 ## التشغيل
@@ -38,7 +47,7 @@ ATTRIBUTION.md             نسبة المصادر وحدود الاستخدام
 
 ## موقع GitHub Pages
 
-بعد رفع الملفات في مستودع مستقل، ادخل إلى `Settings → Pages`، واختر **Deploy from a branch** ثم فرع `main` والمجلد `/ (root)`. يجب إبقاء `index.html` و`about.html` في جذر المستودع. سيظهر رابط موقع GitHub Pages في إعدادات Pages بعد نجاح النشر.
+الرابط المباشر للموقع: **[فتح المنصة](https://mohammednageebmubarak.github.io/research-methodology-interactive/)**. إذا لم تكن GitHub Pages منشورة بعد، افتح `Settings → Pages` واختر **Deploy from a branch** ثم `main` والمجلد `/ (root)`، وتحقق من نجاح النشر.
 
 ## المحافظة على التقدم
 
