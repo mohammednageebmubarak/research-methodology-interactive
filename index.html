@@ -5,7 +5,7 @@
 <meta name="color-scheme" content="light dark"/>
 <title>ملخصات أ.د. عبدالقادر العبادي | مناهج البحث العلمي التفاعلية</title>
 <!-- أنماط المنصة في ملف مستقل لتسهيل مراجعتها وتعديلها. -->
-<link rel="stylesheet" href="assets/css/style.css?v=20261116-mobilefix"/>
+<link rel="stylesheet" href="assets/css/style.css?v=20261116-navigation"/>
 <!-- فحص تشغيل خفيف: يعطي رسالة مفهومة إذا تعذر تحميل ملفات JavaScript على الهاتف. -->
 <script>
 (function(){
@@ -32,7 +32,13 @@
 <header class="top"><div class="wrap"><div class="brand"><div class="logo">◈</div><div><strong>رحلة البحث العلمي</strong><div class="tiny">من الفهم إلى التطبيق • منهجية البحث والإحصاء</div></div></div><div class="topactions"><button class="btn hide-sm" data-action="dashboard">⌂ الرئيسية</button><a class="btn source-link" href="about.html">عن الأستاذ والمرجع</a><button class="btn" data-action="theme" id="themeButton">☾ المظهر</button><button class="btn hide-sm" data-action="export">⇩ نسخة التقدم</button><button class="btn hide-sm" data-action="import">⇧ استعادة</button><input type="file" id="progressUpload" accept=".json,application/json" hidden /></div></div></header>
 <div class="wrap layout"><aside class="sidebar"><h3>المحاضرات والورش</h3><nav id="sideNav"></nav><details class="mobileCourseMenu"><summary>☰ اختر المحاضرة أو الورشة</summary><nav id="mobileNav"></nav></details><div class="notice" id="sideNote">يُحفظ تقدمك تلقائيًا على جهازك ما دامت بيانات المتصفح محفوظة.</div><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><button class="btn" style="padding:6px 9px;font-size:11px" data-action="export">⇩ تصدير التقدم</button><button class="btn" style="padding:6px 9px;font-size:11px" data-action="import">⇧ استعادة التقدم</button></div></aside><main id="app" class="scroll-top" aria-live="polite"><section class="panel" style="margin-top:12px"><h2>منصة مناهج البحث العلمي</h2><p>جار تجهيز المحتوى التفاعلي للمحاضرات العشر والورش الست.</p><p class="small">إذا لم تظهر الدروس، <a href="connection-test.html">افتح اختبار اتصال الموقع</a> للتأكد من إمكانية الوصول إلى GitHub Pages من هاتفك.</p></section></main></div>
 <footer class="footer">ملخصات أ.د. عبدالقادر العبادي في مادة مناهج البحث العلمي · المرجع: طرق البحث في الإدارة (أوما سيكاران) · <a href="about.html">صفحة التعريف والمرجع</a> · تعمل دون إنترنت.</footer>
+<!-- أزرار تنقل ثابتة على الهاتف؛ الرجوع يستعيد الشاشة السابقة داخل المنصة. -->
+<nav class="mobileBottomNav" aria-label="تنقل الجوال">
+  <button type="button" id="mobileNavBack" data-action="mobile-back" aria-label="العودة إلى الشاشة السابقة" disabled>↶ رجوع</button>
+  <button type="button" class="homeLink" data-action="dashboard" aria-label="العودة إلى القائمة الرئيسية">⌂ الرئيسية</button>
+</nav>
+
 <!-- الترتيب مهم: تُحمّل بيانات المحاضرات قبل منطق الواجهة. -->
-<script src="assets/js/course-data.js?v=20261116-mobilefix" defer onerror="window.courseLoadError()"></script>
-<script src="assets/js/app.js?v=20261116-mobilefix" defer onerror="window.courseLoadError()"></script>
+<script src="assets/js/course-data.js?v=20261116-navigation" defer onerror="window.courseLoadError()"></script>
+<script src="assets/js/app.js?v=20261116-navigation" defer onerror="window.courseLoadError()"></script>
 </body></html>
