@@ -17,3 +17,24 @@
 .heroLink{color:#fff;text-decoration:underline;text-underline-offset:3px;font-size:13px}
 .top .brand{flex:1}.source-link{white-space:nowrap}
 @media(max-width:680px){.academic-ribbon{padding:9px 12px}.source-link{font-size:12px}.heroCredit{font-size:14px}}
+
+/* شريط تنقل الجوال: يبقى مرئيًا في جميع صفحات المنصة ولا يحجب آخر سطر. */
+.mobileBottomNav{display:none}
+@media(max-width:680px){
+  body{padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+  .mobileBottomNav{
+    display:flex;gap:10px;align-items:center;justify-content:space-between;
+    position:fixed;inset-inline:0;bottom:0;z-index:70;
+    padding:9px max(14px,env(safe-area-inset-left,0px)) calc(9px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-right,0px));
+    background:var(--paper);border-top:1px solid var(--edge);box-shadow:0 -7px 22px rgba(25,52,77,.13)
+  }
+  .mobileBottomNav button,.mobileBottomNav a{
+    min-height:47px;min-width:0;flex:1;display:flex;align-items:center;justify-content:center;
+    border-radius:12px;border:1px solid var(--edge);background:var(--shade);
+    color:var(--ink);font-size:15px;font-weight:750;text-decoration:none;padding:8px 12px;line-height:1.4
+  }
+  .mobileBottomNav .homeLink{background:#126b71;border-color:#126b71;color:white}
+  .mobileBottomNav button:disabled{opacity:.4;cursor:not-allowed}
+  .mobileBottomNav button:focus-visible,.mobileBottomNav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+}
+@media print{.mobileBottomNav{display:none!important}body{padding-bottom:0!important}}
