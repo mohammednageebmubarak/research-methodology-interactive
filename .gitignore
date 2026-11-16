@@ -1,0 +1,8 @@
+# Local editor files and generated outputs
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+node_modules/
+dist/
+*.log
