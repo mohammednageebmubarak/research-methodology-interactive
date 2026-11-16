@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light"/>
   <meta name="description" content="التعريف بملخصات أ.د. عبدالقادر العبادي والكتاب المرجعي طرق البحث في الإدارة لأوما سيكاران"/>
   <title>عن الأستاذ والمرجع | ملخصات مناهج البحث العلمي</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261116-navigation"/>
   <style>
     .about-wrap{max-width:1120px;margin:32px auto;padding:0 22px 40px}
     .about-header{background:linear-gradient(125deg,#0d4a61,#146f74);color:#fff;border-radius:20px;padding:32px;margin-bottom:24px}
@@ -71,5 +71,21 @@
     </div>
   </main>
   <footer class="footer">ملخصات أ.د. عبدالقادر العبادي · <a href="index.html">العودة إلى الرئيسية</a></footer>
+<!-- شريط تنقل ثابت على الهواتف في صفحة التعريف أيضًا. -->
+<nav class="mobileBottomNav" aria-label="تنقل الجوال">
+  <button type="button" id="mobileAboutBack" aria-label="العودة إلى الصفحة السابقة">↶ رجوع</button>
+  <a class="homeLink" href="index.html" aria-label="العودة إلى القائمة الرئيسية">⌂ الرئيسية</a>
+</nav>
+<script>
+  // الرجوع آمن: إذا فُتحت صفحة التعريف مباشرة، نعود إلى الصفحة الرئيسية بدل مغادرة الموقع.
+  document.getElementById('mobileAboutBack').addEventListener('click',function(){
+    try{
+      if(document.referrer && new URL(document.referrer).origin===window.location.origin && window.history.length>1){
+        window.history.back();return;
+      }
+    }catch(e){}
+    window.location.assign('index.html');
+  });
+</script>
 </body>
 </html>
